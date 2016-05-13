@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="mldn" extends="struts-default">	
+		<action name="hello" class="org.pany.struts2.action.LoginAction">
+			<result name="success">
+				/hello.jsp
+			</result>
+			<result name="error">
+				/errors.jsp
+			</result>
+			<result name="input">
+				/index.jsp
+			</result>
+		</action>                     
+		<action name="Delete" class="org.pany.struts2.action.LoginAction" method="delete">
+		<result name="LOGIN">
+			/errors.jsp
+		</result>
+		</action>
+		
+		<!-- 保存数据进入student -->
+		<action name="saveStudent" class="org.pany.struts2.action.StudentAction">
+			<result name="suc" type="redirect">/Find.action</result>
+		</action>
+		<!-- 查询出所有student -->
+		<action name="Find" class="org.pany.struts2.action.StudentAction" method="find">
+			<result name="suc">/list.jsp</result>
+		</action>
+		<action name="Delete" class="org.pany.struts2.action.StudentAction" method="delete">
+			<result name="suc" type="redirect">/Find.action</result>
+		</action>
+		<action name="Edit" class="org.pany.struts2.action.StudentAction" method="edit">
+			<result name="suc" >/insert.jsp</result>
+		</action>
+		<action name="Update" class="org.pany.struts2.action.StudentAction" method="update">
+			<result name="suc" type="redirect">/Find.action</result>
+		</action>
+	</package>
+</struts>

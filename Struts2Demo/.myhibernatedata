@@ -1,0 +1,22 @@
+#
+#Wed Jan 23 23:29:50 CST 2008
+genBasicCompId=false
+sessionFactoryName=com.pany.hibernateSessionFactory.HibernateSessionFactory
+profile=
+daoSFId=
+version=3.1
+jndiPath=
+detectM2M=false
+reStrategyClass=
+springDaoFile=
+useJavaTypes=true
+keyGenerator=native
+libInstallFolder=/WebRoot/WEB-INF/lib
+addLibs2Project=true
+genVersionTag=false
+sessionFactoryId=
+basePersistenceClass=
+reSettingsFile=
+configFile=/Struts2Demo/src/hibernate.cfg.xml
+createConfigFile=true
+addLibs2Classpath=true

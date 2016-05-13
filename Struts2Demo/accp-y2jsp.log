@@ -1,0 +1,371 @@
+2010-07-09 16:35:03,625 [main] [org.hibernate.cfg.Environment] [INFO] - Hibernate 3.2.2
+2010-07-09 16:35:03,625 [main] [org.hibernate.cfg.Environment] [INFO] - hibernate.properties not found
+2010-07-09 16:35:03,625 [main] [org.hibernate.cfg.Environment] [INFO] - Bytecode provider name : cglib
+2010-07-09 16:35:03,640 [main] [org.hibernate.cfg.Environment] [INFO] - using JDK 1.4 java.sql.Timestamp handling
+2010-07-09 16:35:03,703 [main] [org.hibernate.cfg.Configuration] [INFO] - configuring from resource: /hibernate.cfg.xml
+2010-07-09 16:35:03,703 [main] [org.hibernate.cfg.Configuration] [INFO] - Configuration resource: /hibernate.cfg.xml
+2010-07-09 16:35:03,953 [main] [org.hibernate.cfg.Configuration] [INFO] - Reading mappings from resource : com/pany/po/Student.hbm.xml
+2010-07-09 16:35:04,093 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.pany.po.Student -> student
+2010-07-09 16:35:04,109 [main] [org.hibernate.cfg.Configuration] [INFO] - Configured SessionFactory: null
+2010-07-09 16:35:04,187 [main] [org.hibernate.connection.DriverManagerConnectionProvider] [INFO] - Using Hibernate built-in connection pool (not for production use!)
+2010-07-09 16:35:04,187 [main] [org.hibernate.connection.DriverManagerConnectionProvider] [INFO] - Hibernate connection pool size: 20
+2010-07-09 16:35:04,187 [main] [org.hibernate.connection.DriverManagerConnectionProvider] [INFO] - autocommit mode: false
+2010-07-09 16:35:04,234 [main] [org.hibernate.connection.DriverManagerConnectionProvider] [INFO] - using driver: com.microsoft.sqlserver.jdbc.SQLServerDriver at URL: jdbc:sqlserver://localhost:1433;database=bbs
+2010-07-09 16:35:04,234 [main] [org.hibernate.connection.DriverManagerConnectionProvider] [INFO] - connection properties: {user=sa, password=****}
+2010-07-09 16:35:05,203 [main] [org.hibernate.cfg.SettingsFactory] [WARN] - Could not obtain connection metadata
+com.microsoft.sqlserver.jdbc.SQLServerException: 到主机  的 TCP/IP 连接失败。 java.net.ConnectException: Connection refused: connect
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at org.hibernate.connection.DriverManagerConnectionProvider.getConnection(DriverManagerConnectionProvider.java:110)
+	at org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:84)
+	at org.hibernate.cfg.Configuration.buildSettings(Configuration.java:2009)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1292)
+	at com.pany.hibernateSessionFactory.HibernateSessionFactory.<clinit>(HibernateSessionFactory.java:31)
+	at com.pany.dao.Dao.insert(Dao.java:15)
+	at com.pany.dao.DaoTest.testInsert(DaoTest.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.internal.runners.TestMethodRunner.executeMethodBody(TestMethodRunner.java:99)
+	at org.junit.internal.runners.TestMethodRunner.runUnprotected(TestMethodRunner.java:81)
+	at org.junit.internal.runners.BeforeAndAfterRunner.runProtected(BeforeAndAfterRunner.java:34)
+	at org.junit.internal.runners.TestMethodRunner.runMethod(TestMethodRunner.java:75)
+	at org.junit.internal.runners.TestMethodRunner.run(TestMethodRunner.java:45)
+	at org.junit.internal.runners.TestClassMethodsRunner.invokeTestMethod(TestClassMethodsRunner.java:66)
+	at org.junit.internal.runners.TestClassMethodsRunner.run(TestClassMethodsRunner.java:35)
+	at org.junit.internal.runners.TestClassRunner$1.runUnprotected(TestClassRunner.java:42)
+	at org.junit.internal.runners.BeforeAndAfterRunner.runProtected(BeforeAndAfterRunner.java:34)
+	at org.junit.internal.runners.TestClassRunner.run(TestClassRunner.java:52)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:38)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:460)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:673)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:386)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:196)
+2010-07-09 16:35:05,250 [main] [org.hibernate.dialect.Dialect] [INFO] - Using dialect: org.hibernate.dialect.SQLServerDialect
+2010-07-09 16:35:05,265 [main] [org.hibernate.transaction.TransactionFactoryFactory] [INFO] - Using default transaction strategy (direct JDBC transactions)
+2010-07-09 16:35:05,265 [main] [org.hibernate.transaction.TransactionManagerLookupFactory] [INFO] - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2010-07-09 16:35:05,265 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Automatic flush during beforeCompletion(): disabled
+2010-07-09 16:35:05,265 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Automatic session close at end of transaction: disabled
+2010-07-09 16:35:05,265 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Scrollable result sets: disabled
+2010-07-09 16:35:05,265 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - JDBC3 getGeneratedKeys(): disabled
+2010-07-09 16:35:05,265 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Connection release mode: auto
+2010-07-09 16:35:05,265 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Default batch fetch size: 1
+2010-07-09 16:35:05,265 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Generate SQL with comments: disabled
+2010-07-09 16:35:05,265 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Order SQL updates by primary key: disabled
+2010-07-09 16:35:05,265 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2010-07-09 16:35:05,265 [main] [org.hibernate.hql.ast.ASTQueryTranslatorFactory] [INFO] - Using ASTQueryTranslatorFactory
+2010-07-09 16:35:05,265 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Query language substitutions: {}
+2010-07-09 16:35:05,265 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - JPA-QL strict compliance: disabled
+2010-07-09 16:35:05,265 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Second-level cache: enabled
+2010-07-09 16:35:05,281 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Query cache: disabled
+2010-07-09 16:35:05,281 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Cache provider: org.hibernate.cache.NoCacheProvider
+2010-07-09 16:35:05,281 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Optimize cache for minimal puts: disabled
+2010-07-09 16:35:05,281 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Structured second-level cache entries: disabled
+2010-07-09 16:35:05,281 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Echoing all SQL to stdout
+2010-07-09 16:35:05,281 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Statistics: disabled
+2010-07-09 16:35:05,281 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Deleted entity synthetic identifier rollback: disabled
+2010-07-09 16:35:05,281 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Default entity-mode: pojo
+2010-07-09 16:35:05,281 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Named query checking : enabled
+2010-07-09 16:35:05,343 [main] [org.hibernate.impl.SessionFactoryImpl] [INFO] - building session factory
+2010-07-09 16:35:05,625 [main] [org.hibernate.impl.SessionFactoryObjectFactory] [INFO] - Not binding factory to JNDI, no JNDI name configured
+2010-07-09 16:35:06,609 [main] [org.hibernate.util.JDBCExceptionReporter] [WARN] - SQL Error: 0, SQLState: 08S01
+2010-07-09 16:35:06,609 [main] [org.hibernate.util.JDBCExceptionReporter] [ERROR] - 到主机  的 TCP/IP 连接失败。 java.net.ConnectException: Connection refused: connect
+2010-07-09 16:35:53,812 [main] [org.hibernate.cfg.Environment] [INFO] - Hibernate 3.2.2
+2010-07-09 16:35:53,812 [main] [org.hibernate.cfg.Environment] [INFO] - hibernate.properties not found
+2010-07-09 16:35:53,812 [main] [org.hibernate.cfg.Environment] [INFO] - Bytecode provider name : cglib
+2010-07-09 16:35:53,812 [main] [org.hibernate.cfg.Environment] [INFO] - using JDK 1.4 java.sql.Timestamp handling
+2010-07-09 16:35:53,875 [main] [org.hibernate.cfg.Configuration] [INFO] - configuring from resource: /hibernate.cfg.xml
+2010-07-09 16:35:53,875 [main] [org.hibernate.cfg.Configuration] [INFO] - Configuration resource: /hibernate.cfg.xml
+2010-07-09 16:35:54,125 [main] [org.hibernate.cfg.Configuration] [INFO] - Reading mappings from resource : com/pany/po/Student.hbm.xml
+2010-07-09 16:35:54,265 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.pany.po.Student -> student
+2010-07-09 16:35:54,281 [main] [org.hibernate.cfg.Configuration] [INFO] - Configured SessionFactory: null
+2010-07-09 16:35:54,359 [main] [org.hibernate.connection.DriverManagerConnectionProvider] [INFO] - Using Hibernate built-in connection pool (not for production use!)
+2010-07-09 16:35:54,359 [main] [org.hibernate.connection.DriverManagerConnectionProvider] [INFO] - Hibernate connection pool size: 20
+2010-07-09 16:35:54,359 [main] [org.hibernate.connection.DriverManagerConnectionProvider] [INFO] - autocommit mode: false
+2010-07-09 16:35:54,406 [main] [org.hibernate.connection.DriverManagerConnectionProvider] [INFO] - using driver: com.microsoft.sqlserver.jdbc.SQLServerDriver at URL: jdbc:sqlserver://localhost:1433;database=bbs
+2010-07-09 16:35:54,406 [main] [org.hibernate.connection.DriverManagerConnectionProvider] [INFO] - connection properties: {user=sa, password=****}
+2010-07-09 16:35:54,625 [main] [org.hibernate.cfg.SettingsFactory] [WARN] - Could not obtain connection metadata
+com.microsoft.sqlserver.jdbc.SQLServerException: 无法打开登录所请求的数据库 "bbs"。登录失败。
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.logon(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at org.hibernate.connection.DriverManagerConnectionProvider.getConnection(DriverManagerConnectionProvider.java:110)
+	at org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:84)
+	at org.hibernate.cfg.Configuration.buildSettings(Configuration.java:2009)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1292)
+	at com.pany.hibernateSessionFactory.HibernateSessionFactory.<clinit>(HibernateSessionFactory.java:31)
+	at com.pany.dao.Dao.insert(Dao.java:15)
+	at com.pany.dao.DaoTest.testInsert(DaoTest.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.internal.runners.TestMethodRunner.executeMethodBody(TestMethodRunner.java:99)
+	at org.junit.internal.runners.TestMethodRunner.runUnprotected(TestMethodRunner.java:81)
+	at org.junit.internal.runners.BeforeAndAfterRunner.runProtected(BeforeAndAfterRunner.java:34)
+	at org.junit.internal.runners.TestMethodRunner.runMethod(TestMethodRunner.java:75)
+	at org.junit.internal.runners.TestMethodRunner.run(TestMethodRunner.java:45)
+	at org.junit.internal.runners.TestClassMethodsRunner.invokeTestMethod(TestClassMethodsRunner.java:66)
+	at org.junit.internal.runners.TestClassMethodsRunner.run(TestClassMethodsRunner.java:35)
+	at org.junit.internal.runners.TestClassRunner$1.runUnprotected(TestClassRunner.java:42)
+	at org.junit.internal.runners.BeforeAndAfterRunner.runProtected(BeforeAndAfterRunner.java:34)
+	at org.junit.internal.runners.TestClassRunner.run(TestClassRunner.java:52)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:38)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:460)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:673)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:386)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:196)
+2010-07-09 16:35:54,640 [main] [org.hibernate.dialect.Dialect] [INFO] - Using dialect: org.hibernate.dialect.SQLServerDialect
+2010-07-09 16:35:54,656 [main] [org.hibernate.transaction.TransactionFactoryFactory] [INFO] - Using default transaction strategy (direct JDBC transactions)
+2010-07-09 16:35:54,656 [main] [org.hibernate.transaction.TransactionManagerLookupFactory] [INFO] - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2010-07-09 16:35:54,656 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Automatic flush during beforeCompletion(): disabled
+2010-07-09 16:35:54,656 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Automatic session close at end of transaction: disabled
+2010-07-09 16:35:54,656 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Scrollable result sets: disabled
+2010-07-09 16:35:54,656 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - JDBC3 getGeneratedKeys(): disabled
+2010-07-09 16:35:54,656 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Connection release mode: auto
+2010-07-09 16:35:54,656 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Default batch fetch size: 1
+2010-07-09 16:35:54,656 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Generate SQL with comments: disabled
+2010-07-09 16:35:54,656 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Order SQL updates by primary key: disabled
+2010-07-09 16:35:54,656 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2010-07-09 16:35:54,656 [main] [org.hibernate.hql.ast.ASTQueryTranslatorFactory] [INFO] - Using ASTQueryTranslatorFactory
+2010-07-09 16:35:54,656 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Query language substitutions: {}
+2010-07-09 16:35:54,671 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - JPA-QL strict compliance: disabled
+2010-07-09 16:35:54,671 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Second-level cache: enabled
+2010-07-09 16:35:54,671 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Query cache: disabled
+2010-07-09 16:35:54,671 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Cache provider: org.hibernate.cache.NoCacheProvider
+2010-07-09 16:35:54,671 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Optimize cache for minimal puts: disabled
+2010-07-09 16:35:54,671 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Structured second-level cache entries: disabled
+2010-07-09 16:35:54,671 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Echoing all SQL to stdout
+2010-07-09 16:35:54,671 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Statistics: disabled
+2010-07-09 16:35:54,671 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Deleted entity synthetic identifier rollback: disabled
+2010-07-09 16:35:54,671 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Default entity-mode: pojo
+2010-07-09 16:35:54,671 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Named query checking : enabled
+2010-07-09 16:35:54,703 [main] [org.hibernate.impl.SessionFactoryImpl] [INFO] - building session factory
+2010-07-09 16:35:55,000 [main] [org.hibernate.impl.SessionFactoryObjectFactory] [INFO] - Not binding factory to JNDI, no JNDI name configured
+2010-07-09 16:35:55,046 [main] [org.hibernate.util.JDBCExceptionReporter] [WARN] - SQL Error: 4060, SQLState: S0001
+2010-07-09 16:35:55,046 [main] [org.hibernate.util.JDBCExceptionReporter] [ERROR] - 无法打开登录所请求的数据库 "bbs"。登录失败。
+2010-07-09 16:36:11,781 [main] [org.hibernate.cfg.Environment] [INFO] - Hibernate 3.2.2
+2010-07-09 16:36:11,781 [main] [org.hibernate.cfg.Environment] [INFO] - hibernate.properties not found
+2010-07-09 16:36:11,796 [main] [org.hibernate.cfg.Environment] [INFO] - Bytecode provider name : cglib
+2010-07-09 16:36:11,796 [main] [org.hibernate.cfg.Environment] [INFO] - using JDK 1.4 java.sql.Timestamp handling
+2010-07-09 16:36:11,859 [main] [org.hibernate.cfg.Configuration] [INFO] - configuring from resource: /hibernate.cfg.xml
+2010-07-09 16:36:11,859 [main] [org.hibernate.cfg.Configuration] [INFO] - Configuration resource: /hibernate.cfg.xml
+2010-07-09 16:36:12,093 [main] [org.hibernate.cfg.Configuration] [INFO] - Reading mappings from resource : com/pany/po/Student.hbm.xml
+2010-07-09 16:36:12,234 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.pany.po.Student -> student
+2010-07-09 16:36:12,250 [main] [org.hibernate.cfg.Configuration] [INFO] - Configured SessionFactory: null
+2010-07-09 16:36:12,328 [main] [org.hibernate.connection.DriverManagerConnectionProvider] [INFO] - Using Hibernate built-in connection pool (not for production use!)
+2010-07-09 16:36:12,328 [main] [org.hibernate.connection.DriverManagerConnectionProvider] [INFO] - Hibernate connection pool size: 20
+2010-07-09 16:36:12,328 [main] [org.hibernate.connection.DriverManagerConnectionProvider] [INFO] - autocommit mode: false
+2010-07-09 16:36:12,375 [main] [org.hibernate.connection.DriverManagerConnectionProvider] [INFO] - using driver: com.microsoft.sqlserver.jdbc.SQLServerDriver at URL: jdbc:sqlserver://localhost:1433;database=bbs
+2010-07-09 16:36:12,375 [main] [org.hibernate.connection.DriverManagerConnectionProvider] [INFO] - connection properties: {user=sa, password=****}
+2010-07-09 16:36:12,437 [main] [org.hibernate.cfg.SettingsFactory] [WARN] - Could not obtain connection metadata
+com.microsoft.sqlserver.jdbc.SQLServerException: 无法打开登录所请求的数据库 "bbs"。登录失败。
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.IOBuffer.processPackets(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.logon(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(Unknown Source)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at org.hibernate.connection.DriverManagerConnectionProvider.getConnection(DriverManagerConnectionProvider.java:110)
+	at org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:84)
+	at org.hibernate.cfg.Configuration.buildSettings(Configuration.java:2009)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1292)
+	at com.pany.hibernateSessionFactory.HibernateSessionFactory.<clinit>(HibernateSessionFactory.java:31)
+	at com.pany.dao.Dao.insert(Dao.java:15)
+	at com.pany.dao.DaoTest.testInsert(DaoTest.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.internal.runners.TestMethodRunner.executeMethodBody(TestMethodRunner.java:99)
+	at org.junit.internal.runners.TestMethodRunner.runUnprotected(TestMethodRunner.java:81)
+	at org.junit.internal.runners.BeforeAndAfterRunner.runProtected(BeforeAndAfterRunner.java:34)
+	at org.junit.internal.runners.TestMethodRunner.runMethod(TestMethodRunner.java:75)
+	at org.junit.internal.runners.TestMethodRunner.run(TestMethodRunner.java:45)
+	at org.junit.internal.runners.TestClassMethodsRunner.invokeTestMethod(TestClassMethodsRunner.java:66)
+	at org.junit.internal.runners.TestClassMethodsRunner.run(TestClassMethodsRunner.java:35)
+	at org.junit.internal.runners.TestClassRunner$1.runUnprotected(TestClassRunner.java:42)
+	at org.junit.internal.runners.BeforeAndAfterRunner.runProtected(BeforeAndAfterRunner.java:34)
+	at org.junit.internal.runners.TestClassRunner.run(TestClassRunner.java:52)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:38)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:460)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:673)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:386)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:196)
+2010-07-09 16:36:12,468 [main] [org.hibernate.dialect.Dialect] [INFO] - Using dialect: org.hibernate.dialect.SQLServerDialect
+2010-07-09 16:36:12,468 [main] [org.hibernate.transaction.TransactionFactoryFactory] [INFO] - Using default transaction strategy (direct JDBC transactions)
+2010-07-09 16:36:12,468 [main] [org.hibernate.transaction.TransactionManagerLookupFactory] [INFO] - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2010-07-09 16:36:12,468 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Automatic flush during beforeCompletion(): disabled
+2010-07-09 16:36:12,468 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Automatic session close at end of transaction: disabled
+2010-07-09 16:36:12,468 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Scrollable result sets: disabled
+2010-07-09 16:36:12,468 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - JDBC3 getGeneratedKeys(): disabled
+2010-07-09 16:36:12,468 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Connection release mode: auto
+2010-07-09 16:36:12,484 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Default batch fetch size: 1
+2010-07-09 16:36:12,484 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Generate SQL with comments: disabled
+2010-07-09 16:36:12,484 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Order SQL updates by primary key: disabled
+2010-07-09 16:36:12,484 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2010-07-09 16:36:12,484 [main] [org.hibernate.hql.ast.ASTQueryTranslatorFactory] [INFO] - Using ASTQueryTranslatorFactory
+2010-07-09 16:36:12,484 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Query language substitutions: {}
+2010-07-09 16:36:12,484 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - JPA-QL strict compliance: disabled
+2010-07-09 16:36:12,484 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Second-level cache: enabled
+2010-07-09 16:36:12,484 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Query cache: disabled
+2010-07-09 16:36:12,484 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Cache provider: org.hibernate.cache.NoCacheProvider
+2010-07-09 16:36:12,484 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Optimize cache for minimal puts: disabled
+2010-07-09 16:36:12,484 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Structured second-level cache entries: disabled
+2010-07-09 16:36:12,484 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Echoing all SQL to stdout
+2010-07-09 16:36:12,484 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Statistics: disabled
+2010-07-09 16:36:12,484 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Deleted entity synthetic identifier rollback: disabled
+2010-07-09 16:36:12,484 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Default entity-mode: pojo
+2010-07-09 16:36:12,484 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Named query checking : enabled
+2010-07-09 16:36:12,515 [main] [org.hibernate.impl.SessionFactoryImpl] [INFO] - building session factory
+2010-07-09 16:36:12,796 [main] [org.hibernate.impl.SessionFactoryObjectFactory] [INFO] - Not binding factory to JNDI, no JNDI name configured
+2010-07-09 16:36:12,843 [main] [org.hibernate.util.JDBCExceptionReporter] [WARN] - SQL Error: 4060, SQLState: S0001
+2010-07-09 16:36:12,843 [main] [org.hibernate.util.JDBCExceptionReporter] [ERROR] - 无法打开登录所请求的数据库 "bbs"。登录失败。
+2010-07-09 16:38:11,437 [main] [org.hibernate.cfg.Environment] [INFO] - Hibernate 3.2.2
+2010-07-09 16:38:11,453 [main] [org.hibernate.cfg.Environment] [INFO] - hibernate.properties not found
+2010-07-09 16:38:11,453 [main] [org.hibernate.cfg.Environment] [INFO] - Bytecode provider name : cglib
+2010-07-09 16:38:11,453 [main] [org.hibernate.cfg.Environment] [INFO] - using JDK 1.4 java.sql.Timestamp handling
+2010-07-09 16:38:11,515 [main] [org.hibernate.cfg.Configuration] [INFO] - configuring from resource: /hibernate.cfg.xml
+2010-07-09 16:38:11,515 [main] [org.hibernate.cfg.Configuration] [INFO] - Configuration resource: /hibernate.cfg.xml
+2010-07-09 16:38:11,765 [main] [org.hibernate.cfg.Configuration] [INFO] - Reading mappings from resource : com/pany/po/Student.hbm.xml
+2010-07-09 16:38:11,906 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.pany.po.Student -> student
+2010-07-09 16:38:11,921 [main] [org.hibernate.cfg.Configuration] [INFO] - Configured SessionFactory: null
+2010-07-09 16:38:11,984 [main] [org.hibernate.connection.DriverManagerConnectionProvider] [INFO] - Using Hibernate built-in connection pool (not for production use!)
+2010-07-09 16:38:11,984 [main] [org.hibernate.connection.DriverManagerConnectionProvider] [INFO] - Hibernate connection pool size: 20
+2010-07-09 16:38:11,984 [main] [org.hibernate.connection.DriverManagerConnectionProvider] [INFO] - autocommit mode: false
+2010-07-09 16:38:12,031 [main] [org.hibernate.connection.DriverManagerConnectionProvider] [INFO] - using driver: com.microsoft.sqlserver.jdbc.SQLServerDriver at URL: jdbc:sqlserver://localhost:1433;database=books
+2010-07-09 16:38:12,031 [main] [org.hibernate.connection.DriverManagerConnectionProvider] [INFO] - connection properties: {user=sa, password=****}
+2010-07-09 16:38:12,109 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - RDBMS: Microsoft SQL Server, version: 9.00.1399
+2010-07-09 16:38:12,109 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - JDBC driver: Microsoft SQL Server 2005 JDBC Driver, version: 1.0.809.102
+2010-07-09 16:38:12,140 [main] [org.hibernate.dialect.Dialect] [INFO] - Using dialect: org.hibernate.dialect.SQLServerDialect
+2010-07-09 16:38:12,140 [main] [org.hibernate.transaction.TransactionFactoryFactory] [INFO] - Using default transaction strategy (direct JDBC transactions)
+2010-07-09 16:38:12,156 [main] [org.hibernate.transaction.TransactionManagerLookupFactory] [INFO] - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2010-07-09 16:38:12,156 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Automatic flush during beforeCompletion(): disabled
+2010-07-09 16:38:12,156 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Automatic session close at end of transaction: disabled
+2010-07-09 16:38:12,156 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Scrollable result sets: enabled
+2010-07-09 16:38:12,156 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - JDBC3 getGeneratedKeys(): enabled
+2010-07-09 16:38:12,156 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Connection release mode: auto
+2010-07-09 16:38:12,156 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Default batch fetch size: 1
+2010-07-09 16:38:12,156 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Generate SQL with comments: disabled
+2010-07-09 16:38:12,156 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Order SQL updates by primary key: disabled
+2010-07-09 16:38:12,156 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2010-07-09 16:38:12,156 [main] [org.hibernate.hql.ast.ASTQueryTranslatorFactory] [INFO] - Using ASTQueryTranslatorFactory
+2010-07-09 16:38:12,156 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Query language substitutions: {}
+2010-07-09 16:38:12,156 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - JPA-QL strict compliance: disabled
+2010-07-09 16:38:12,156 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Second-level cache: enabled
+2010-07-09 16:38:12,156 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Query cache: disabled
+2010-07-09 16:38:12,156 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Cache provider: org.hibernate.cache.NoCacheProvider
+2010-07-09 16:38:12,156 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Optimize cache for minimal puts: disabled
+2010-07-09 16:38:12,156 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Structured second-level cache entries: disabled
+2010-07-09 16:38:12,156 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Echoing all SQL to stdout
+2010-07-09 16:38:12,156 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Statistics: disabled
+2010-07-09 16:38:12,156 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Deleted entity synthetic identifier rollback: disabled
+2010-07-09 16:38:12,156 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Default entity-mode: pojo
+2010-07-09 16:38:12,156 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Named query checking : enabled
+2010-07-09 16:38:12,203 [main] [org.hibernate.impl.SessionFactoryImpl] [INFO] - building session factory
+2010-07-09 16:38:12,484 [main] [org.hibernate.impl.SessionFactoryObjectFactory] [INFO] - Not binding factory to JNDI, no JNDI name configured
+2010-07-09 16:38:12,953 [main] [org.hibernate.util.JDBCExceptionReporter] [WARN] - SQL Error: 208, SQLState: S0002
+2010-07-09 16:38:12,953 [main] [org.hibernate.util.JDBCExceptionReporter] [ERROR] - 对象名  'test.student' 无效。
+2010-07-09 16:39:01,687 [main] [org.hibernate.cfg.Environment] [INFO] - Hibernate 3.2.2
+2010-07-09 16:39:01,687 [main] [org.hibernate.cfg.Environment] [INFO] - hibernate.properties not found
+2010-07-09 16:39:01,687 [main] [org.hibernate.cfg.Environment] [INFO] - Bytecode provider name : cglib
+2010-07-09 16:39:01,703 [main] [org.hibernate.cfg.Environment] [INFO] - using JDK 1.4 java.sql.Timestamp handling
+2010-07-09 16:39:01,765 [main] [org.hibernate.cfg.Configuration] [INFO] - configuring from resource: /hibernate.cfg.xml
+2010-07-09 16:39:01,765 [main] [org.hibernate.cfg.Configuration] [INFO] - Configuration resource: /hibernate.cfg.xml
+2010-07-09 16:39:02,000 [main] [org.hibernate.cfg.Configuration] [INFO] - Reading mappings from resource : com/pany/po/Student.hbm.xml
+2010-07-09 16:39:02,140 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.pany.po.Student -> student
+2010-07-09 16:39:02,156 [main] [org.hibernate.cfg.Configuration] [INFO] - Configured SessionFactory: null
+2010-07-09 16:39:02,218 [main] [org.hibernate.connection.DriverManagerConnectionProvider] [INFO] - Using Hibernate built-in connection pool (not for production use!)
+2010-07-09 16:39:02,218 [main] [org.hibernate.connection.DriverManagerConnectionProvider] [INFO] - Hibernate connection pool size: 20
+2010-07-09 16:39:02,218 [main] [org.hibernate.connection.DriverManagerConnectionProvider] [INFO] - autocommit mode: false
+2010-07-09 16:39:02,281 [main] [org.hibernate.connection.DriverManagerConnectionProvider] [INFO] - using driver: com.microsoft.sqlserver.jdbc.SQLServerDriver at URL: jdbc:sqlserver://localhost:1433;database=books
+2010-07-09 16:39:02,281 [main] [org.hibernate.connection.DriverManagerConnectionProvider] [INFO] - connection properties: {user=sa, password=****}
+2010-07-09 16:39:02,359 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - RDBMS: Microsoft SQL Server, version: 9.00.1399
+2010-07-09 16:39:02,359 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - JDBC driver: Microsoft SQL Server 2005 JDBC Driver, version: 1.0.809.102
+2010-07-09 16:39:02,375 [main] [org.hibernate.dialect.Dialect] [INFO] - Using dialect: org.hibernate.dialect.SQLServerDialect
+2010-07-09 16:39:02,390 [main] [org.hibernate.transaction.TransactionFactoryFactory] [INFO] - Using default transaction strategy (direct JDBC transactions)
+2010-07-09 16:39:02,390 [main] [org.hibernate.transaction.TransactionManagerLookupFactory] [INFO] - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2010-07-09 16:39:02,390 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Automatic flush during beforeCompletion(): disabled
+2010-07-09 16:39:02,390 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Automatic session close at end of transaction: disabled
+2010-07-09 16:39:02,390 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Scrollable result sets: enabled
+2010-07-09 16:39:02,390 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - JDBC3 getGeneratedKeys(): enabled
+2010-07-09 16:39:02,390 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Connection release mode: auto
+2010-07-09 16:39:02,390 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Default batch fetch size: 1
+2010-07-09 16:39:02,390 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Generate SQL with comments: disabled
+2010-07-09 16:39:02,390 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Order SQL updates by primary key: disabled
+2010-07-09 16:39:02,390 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2010-07-09 16:39:02,390 [main] [org.hibernate.hql.ast.ASTQueryTranslatorFactory] [INFO] - Using ASTQueryTranslatorFactory
+2010-07-09 16:39:02,390 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Query language substitutions: {}
+2010-07-09 16:39:02,390 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - JPA-QL strict compliance: disabled
+2010-07-09 16:39:02,390 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Second-level cache: enabled
+2010-07-09 16:39:02,390 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Query cache: disabled
+2010-07-09 16:39:02,390 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Cache provider: org.hibernate.cache.NoCacheProvider
+2010-07-09 16:39:02,390 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Optimize cache for minimal puts: disabled
+2010-07-09 16:39:02,390 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Structured second-level cache entries: disabled
+2010-07-09 16:39:02,390 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Echoing all SQL to stdout
+2010-07-09 16:39:02,390 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Statistics: disabled
+2010-07-09 16:39:02,390 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Deleted entity synthetic identifier rollback: disabled
+2010-07-09 16:39:02,406 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Default entity-mode: pojo
+2010-07-09 16:39:02,406 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Named query checking : enabled
+2010-07-09 16:39:02,437 [main] [org.hibernate.impl.SessionFactoryImpl] [INFO] - building session factory
+2010-07-09 16:39:02,718 [main] [org.hibernate.impl.SessionFactoryObjectFactory] [INFO] - Not binding factory to JNDI, no JNDI name configured
+2010-07-09 16:39:03,078 [main] [org.hibernate.util.JDBCExceptionReporter] [WARN] - SQL Error: 208, SQLState: S0002
+2010-07-09 16:39:03,078 [main] [org.hibernate.util.JDBCExceptionReporter] [ERROR] - 对象名  'student' 无效。
+2010-07-09 16:45:33,984 [main] [org.hibernate.cfg.Environment] [INFO] - Hibernate 3.2.2
+2010-07-09 16:45:34,000 [main] [org.hibernate.cfg.Environment] [INFO] - hibernate.properties not found
+2010-07-09 16:45:34,000 [main] [org.hibernate.cfg.Environment] [INFO] - Bytecode provider name : cglib
+2010-07-09 16:45:34,000 [main] [org.hibernate.cfg.Environment] [INFO] - using JDK 1.4 java.sql.Timestamp handling
+2010-07-09 16:45:34,062 [main] [org.hibernate.cfg.Configuration] [INFO] - configuring from resource: /hibernate.cfg.xml
+2010-07-09 16:45:34,062 [main] [org.hibernate.cfg.Configuration] [INFO] - Configuration resource: /hibernate.cfg.xml
+2010-07-09 16:45:34,312 [main] [org.hibernate.cfg.Configuration] [INFO] - Reading mappings from resource : com/pany/po/Student.hbm.xml
+2010-07-09 16:45:34,437 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.pany.po.Student -> student
+2010-07-09 16:45:34,453 [main] [org.hibernate.cfg.Configuration] [INFO] - Configured SessionFactory: null
+2010-07-09 16:45:34,531 [main] [org.hibernate.connection.DriverManagerConnectionProvider] [INFO] - Using Hibernate built-in connection pool (not for production use!)
+2010-07-09 16:45:34,531 [main] [org.hibernate.connection.DriverManagerConnectionProvider] [INFO] - Hibernate connection pool size: 20
+2010-07-09 16:45:34,531 [main] [org.hibernate.connection.DriverManagerConnectionProvider] [INFO] - autocommit mode: false
+2010-07-09 16:45:34,578 [main] [org.hibernate.connection.DriverManagerConnectionProvider] [INFO] - using driver: com.microsoft.sqlserver.jdbc.SQLServerDriver at URL: jdbc:sqlserver://localhost:1433;database=books
+2010-07-09 16:45:34,578 [main] [org.hibernate.connection.DriverManagerConnectionProvider] [INFO] - connection properties: {user=sa, password=****}
+2010-07-09 16:45:34,656 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - RDBMS: Microsoft SQL Server, version: 9.00.1399
+2010-07-09 16:45:34,656 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - JDBC driver: Microsoft SQL Server 2005 JDBC Driver, version: 1.0.809.102
+2010-07-09 16:45:34,671 [main] [org.hibernate.dialect.Dialect] [INFO] - Using dialect: org.hibernate.dialect.SQLServerDialect
+2010-07-09 16:45:34,687 [main] [org.hibernate.transaction.TransactionFactoryFactory] [INFO] - Using default transaction strategy (direct JDBC transactions)
+2010-07-09 16:45:34,687 [main] [org.hibernate.transaction.TransactionManagerLookupFactory] [INFO] - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2010-07-09 16:45:34,687 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Automatic flush during beforeCompletion(): disabled
+2010-07-09 16:45:34,687 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Automatic session close at end of transaction: disabled
+2010-07-09 16:45:34,687 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Scrollable result sets: enabled
+2010-07-09 16:45:34,687 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - JDBC3 getGeneratedKeys(): enabled
+2010-07-09 16:45:34,687 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Connection release mode: auto
+2010-07-09 16:45:34,687 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Default batch fetch size: 1
+2010-07-09 16:45:34,687 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Generate SQL with comments: disabled
+2010-07-09 16:45:34,687 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Order SQL updates by primary key: disabled
+2010-07-09 16:45:34,687 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2010-07-09 16:45:34,687 [main] [org.hibernate.hql.ast.ASTQueryTranslatorFactory] [INFO] - Using ASTQueryTranslatorFactory
+2010-07-09 16:45:34,687 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Query language substitutions: {}
+2010-07-09 16:45:34,687 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - JPA-QL strict compliance: disabled
+2010-07-09 16:45:34,687 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Second-level cache: enabled
+2010-07-09 16:45:34,687 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Query cache: disabled
+2010-07-09 16:45:34,687 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Cache provider: org.hibernate.cache.NoCacheProvider
+2010-07-09 16:45:34,687 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Optimize cache for minimal puts: disabled
+2010-07-09 16:45:34,687 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Structured second-level cache entries: disabled
+2010-07-09 16:45:34,703 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Echoing all SQL to stdout
+2010-07-09 16:45:34,703 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Statistics: disabled
+2010-07-09 16:45:34,703 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Deleted entity synthetic identifier rollback: disabled
+2010-07-09 16:45:34,703 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Default entity-mode: pojo
+2010-07-09 16:45:34,703 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Named query checking : enabled
+2010-07-09 16:45:34,734 [main] [org.hibernate.impl.SessionFactoryImpl] [INFO] - building session factory
+2010-07-09 16:45:35,015 [main] [org.hibernate.impl.SessionFactoryObjectFactory] [INFO] - Not binding factory to JNDI, no JNDI name configured
+2010-07-09 16:45:35,015 [main] [org.hibernate.tool.hbm2ddl.SchemaExport] [INFO] - Running hbm2ddl schema export
+2010-07-09 16:45:35,015 [main] [org.hibernate.tool.hbm2ddl.SchemaExport] [INFO] - exporting generated schema to database
+2010-07-09 16:45:35,375 [main] [org.hibernate.tool.hbm2ddl.SchemaExport] [INFO] - schema export complete
